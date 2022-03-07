@@ -1,0 +1,11 @@
+/*==================导航栏==================================*/
+
+/*导航栏面板颜色*/
+#navigator-toolbox {
+	background-color: var(--color-bg) !important;
+}
+
+
+.titlebar-color {
+  background-color: var(--toolbar-bgcolor);
+}

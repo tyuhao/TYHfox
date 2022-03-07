@@ -1,0 +1,35 @@
+#urlbar-background,#urlbar{ 
+    border-radius: 16px !important ;
+    /*background-color: var(--color-tabbar) !important;*/
+    
+    border: transparent !important;
+  }
+
+#urlbar-background{ 
+  margin-bottom: 2px !important;
+  margin-top: 2px !important;
+  margin-left: 2px !important;
+  margin-right: 2px !important; 
+}
+  
+#navigator-toolbox{
+	border-bottom: none !important;
+  }
+  
+  #searchbar
+  {
+	border-radius: 16px !important;
+  background-color: var(--color-tabbar) !important;
+  }
+
+  .findbar-container
+{
+	overflow: visible !important;
+  background-color: var(--color-bg) !important;
+}
+
+.findbar-textbox
+{
+  border-radius: 16px !important;
+  background-color: var(--color-bg) !important;
+}

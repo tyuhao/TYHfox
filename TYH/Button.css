@@ -1,0 +1,74 @@
+
+/*==================按钮==================================*/
+
+ .toolbarbutton-1:hover {
+	fill:var(--color-button) !important;
+  }
+  
+  .toolbarbutton-1[open="true"] {
+	fill: var(--color-button)
+  }
+  
+
+  
+  .toolbarbutton-1 .toolbarbutton-icon,
+  .toolbarbutton-1 .toolbarbutton-badge-stack {
+border-radius: 60% !important;
+  }
+  
+
+
+#TabsToolbar .toolbarbutton-1>.toolbarbutton-icon,
+#TabsToolbar .toolbarbutton-1>.toolbarbutton-badge-stack {
+  border-radius: var(--toolbarbutton-border-radius) !important;
+  /*background: none !important;*/
+  padding: var(--uc-toolbarbutton-inner-padding) !important;
+}
+
+#TabsToolbar .toolbarbutton-1>.toolbarbutton-icon {
+  width: calc(2 * var(--uc-toolbarbutton-inner-padding) + 16px) !important;
+  height: calc(2 * var(--uc-toolbarbutton-inner-padding) + 16px) !important;
+}
+
+ /* Tab hover customizations 标签关闭按钮*/
+.close-icon:hover {
+	border-radius: 60% !important;
+	fill: #FF0000 !important;
+	transition: fill 10ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  }
+  
+  
+
+/*================== 窗口缩放按钮 ==================*/
+  /*================ GLOBAL COLORS ================*/
+:root {
+
+	--caption-min-color: 250, 189, 47;
+	--caption-max-color: 131, 165, 152;
+	--caption-close-color: 211, 134, 155;
+	}
+	
+.titlebar-button {
+	transition: all 0.3s ease !important;
+	padding: 8px 10px !important;
+    background: rgba(var(--dark-color), 1) !important;
+}
+.titlebar-button.titlebar-close {
+	padding-right: 26px !important;
+}
+.titlebar-button > .toolbarbutton-icon {
+	transition: all 0.3s ease !important;
+	list-style-image: none;
+	border-radius: 10px;
+}
+
+.titlebar-button.titlebar-min > .toolbarbutton-icon {
+	background: rgba(var(--caption-min-color), 1); 
+}
+.titlebar-button.titlebar-max > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore > .toolbarbutton-icon {
+	background: rgba(var(--caption-max-color), 1); 
+}
+.titlebar-button.titlebar-close > .toolbarbutton-icon {
+    background: rgba(var(--caption-close-color), 1); 
+}

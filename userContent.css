@@ -1,0 +1,27 @@
+
+@import "TYH/Newtab.css";
+/*@import url(./css/newtab.css); 
+
+
+@import url(./css/preferences.css); 
+@import url(./css/addons.css); 
+@import url(./css/resource.css); 
+
+
+@import url(./css/bookmark.css); 
+@import url(./css/menu.css); 
+@import url(./css/navbar.css); 
+@import url(./css/popup.css); 
+@import url(./css/preference.css); 
+@import url(./css/sidebar.css); 
+@import url(./css/tabbar.css); 
+@import url(./css/urlbar.css); */
+
+@-moz-document url("about:home"), url("about:newtab") {
+  .activity-stream {
+    /*background-color: #474749 !important;*/
+  }
+}
+
+
+

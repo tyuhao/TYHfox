@@ -1,0 +1,44 @@
+.top-site-outer .tile .icon-wrapper,
+.top-site-outer .tile,
+.rich-icon,
+.icon-wrapper {
+/*Í¼±êÔ²½Ç*/
+        border-radius: 50% !important;
+        opacity: 1!important;
+        width: 76px !important;
+        height: 76px !important;
+
+    }
+    
+
+#newtab-search-text,
+  #searchSubmit{
+  /*ËÑË÷¿òÔ²½Ç*/
+    
+    border-radius: 48px !important;
+    /*border-color: var(--main-accent-color) !important;
+    fill: var(--main-accent-color) !important;
+    box-shadow: none !important;
+    background-color: none !important;
+    color: none !important;
+    font-family: helvetica !important*/
+  }
+
+    
+/*±³¾°Í¼Æ¬*/
+body {
+/* ±ØÓ¦±ÚÖ½µØÖ·£ºhttps://api.dujin.org/bing/1920.php 
+
+        background-image: url(../TYH/Destiny2.png) !important;*/
+        background-size: cover !important;
+        background-position: center !important;
+        /*--main-color: #ffffff;/*±³¾°ÑÕÉ«
+      --private-main-color: #261010;  This one does not work for some reason*/
+    }
+
+@-moz-document url-prefix(about:newtab),url-prefix(about:home) {
+
+/*Òþ²Ø²¿·ÖÄÚÈÝ*/
+.icon.icon-pin-small {
+        display: none !important;
+    }

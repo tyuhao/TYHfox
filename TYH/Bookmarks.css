@@ -1,0 +1,48 @@
+/*==================书签栏==================================*/
+
+#PlacesToolbar {
+	align-items: center !important;
+	display: flex !important;
+	/*font-family: "Sarasa Mono T SC", sans-serif !important;
+	font-size: 10pt !important;
+	font-weight: 700 !important;*/
+	justify-content: center !important;
+}
+/*书签栏自动隐藏*/
+#PersonalToolbar{
+	--uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */
+	--uc-bm-padding: 4px; /* Vertical padding to be applied to bookmarks */
+	--uc-autohide-toolbar-delay: 10ms; /* 隐藏时间The toolbar is hidden after 0.6s */
+	
+	/* 0deg = "show" ; 90deg = "hide" ;  Set the following to control when bookmarks are shown */
+	--uc-autohide-toolbar-focus-rotation: 0deg; /* urlbar is focused */
+	--uc-autohide-toolbar-hover-rotation: 0deg; /* cursor is over the toolbar area */
+  }
+  
+  :root[uidensity="compact"] #PersonalToolbar{ --uc-bm-padding: 1px }
+  :root[uidensity="touch"] #PersonalToolbar{ --uc-bm-padding: 7px }
+  
+  #PersonalToolbar:not([customizing]){
+	position: relative;
+	margin-bottom: calc(0px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
+	transform: rotateX(90deg);
+	transform-origin: top;
+	transition: transform 135ms linear var(--uc-autohide-toolbar-delay) !important;
+	z-index: 1;
+  }
+  
+  #PlacesToolbarItems > .bookmark-item{ padding-block: var(--uc-bm-padding) !important; }
+  
+  #nav-bar:focus-within + #PersonalToolbar{
+	transition-delay: 100ms !important;
+	transform: rotateX(var(--uc-autohide-toolbar-focus-rotation,0));
+  }
+  
+  #navigator-toolbox:hover > #PersonalToolbar{
+	transition-delay: 100ms !important;
+	transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));
+  }
+  
+  #navigator-toolbox:hover > #nav-bar:focus-within + #PersonalToolbar {  
+	transform: rotateX(0);
+  }

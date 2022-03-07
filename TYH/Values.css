@@ -1,0 +1,18 @@
+html#main-window {
+
+	/*--color-bg: #24292f;
+	--toolbar-bgcolor: var(--color-bg) !important;
+  
+  --color-urlbar: #128397;
+  --color-tabbar:#3a434c;*/
+  --color-button: #2da44e;
+  
+
+
+}
+	:root #titlebar {
+  --uc-toolbarbutton-inner-padding: 6px !important;
+  --toolbarbutton-border-radius: 22px !important;
+  --tabs-navbar-shadow-size: 0 !important;
+  }
+

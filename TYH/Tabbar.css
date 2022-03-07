@@ -1,0 +1,27 @@
+/*==================±Í«©¿∏==================================*/
+.tab-background
+    {
+        border-radius: 25px 15px 25px 15px !important;
+    }
+   
+#TabsToolbar  {
+  padding-inline-start: 0px !important;
+}
+
+#tabbrowser-tabs {
+  margin-left: 10px !important;
+}
+.tabbrowser-tab {
+	max-height: var(--tab-height) !important;
+	min-height: var(--tab-height) !important;
+}
+
+
+splitter#sidebar-splitter {
+  opacity: 0 !important;
+}
+
+
+#sidebar-box {
+  border-radius: 20px;
+}
