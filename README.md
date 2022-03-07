@@ -8,4 +8,6 @@
 4. 将 userChrome.css,usercontent.css 文件和TYH文件夹放入chrome文件夹
 5. 打开 Firefox,firefox变成图片中样式
 
+![firefox](img/TYHfox.png)
+
 ![firefox](img/firefox.png)
