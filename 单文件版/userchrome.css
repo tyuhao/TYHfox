@@ -1,0 +1,121 @@
+/*
+ _____      _      ____    ____       _      ____
+|_   _|    / \    | __ )  | __ )     / \    |  _ \
+  | |     / _ \   |  _ \  |  _ \    / _ \   | |_) |
+  | |    / ___ \  | |_) | | |_) |  / ___ \  |  _ <
+  |_|   /_/   \_\ |____/  |____/  /_/   \_\ |_| \_\
+*/
+.tab-background{border-radius: 25px 15px 25px 15px !important; }/*标签圆角*/
+.tabbrowser-tab {
+	max-height: var(--tab-height) !important;
+	min-height: var(--tab-height) !important;
+  }
+/*标签关闭按钮圆角*/
+.tab-close-button,
+.tab-icon-overlay:-moz-any([soundplaying], [muted], [activemedia-blocked]),
+.tab-icon-sound
+{border-radius: 20px !important;}
+/*
+ _   _      _     __     __  ____       _      ____
+| \ | |    / \    \ \   / / | __ )     / \    |  _ \
+|  \| |   / _ \    \ \ / /  |  _ \    / _ \   | |_) |
+| |\  |  / ___ \    \ V /   | |_) |  / ___ \  |  _ <
+|_| \_| /_/   \_\    \_/    |____/  /_/   \_\ |_| \_\
+*/
+#navigator-toolbox {
+	background-color: var(--color-bg) !important;
+}
+.titlebar-color {
+  background-color: var(--toolbar-bgcolor);
+}
+/*
+ ____    _____      _      ____     ____   _   _   ____       _      ____
+/ ___|  | ____|    / \    |  _ \   / ___| | | | | | __ )     / \    |  _ \
+\___ \  |  _|     / _ \   | |_) | | |     | |_| | |  _ \    / _ \   | |_) |
+ ___) | | |___   / ___ \  |  _ <  | |___  |  _  | | |_) |  / ___ \  |  _ <
+|____/  |_____| /_/   \_\ |_| \_\  \____| |_| |_| |____/  /_/   \_\ |_| \_\
+*/
+/*地址栏圆角*/
+#urlbar-background,#urlbar{ 
+    border-radius: 16px !important ;
+    text-align: center !important;
+    /*background-color: var(--color-tabbar) !important;*/
+    border: transparent !important;
+  }
+/*搜索框圆角*/
+#searchbar{border-radius: 16px !important;}
+/*查找框圆角*/
+.findbar-textbox{border-radius: 16px !important;}
+/*隐藏地址栏扩展的图标文字*/
+#identity-icon-label {display: none !important;}
+/*
+ _____    ___     ___    _       ____       _      ____
+|_   _|  / _ \   / _ \  | |     | __ )     / \    |  _ \
+  | |   | | | | | | | | | |     |  _ \    / _ \   | |_) |
+  | |   | |_| | | |_| | | |___  | |_) |  / ___ \  |  _ <
+  |_|    \___/   \___/  |_____| |____/  /_/   \_\ |_| \_\
+*/
+/*工具栏按钮圆角*/
+ .toolbarbutton-1:hover {
+	fill:var(--color-button) !important;
+  }
+  .toolbarbutton-1[open="true"] {
+	fill: var(--color-button)
+  }
+  .toolbarbutton-1 .toolbarbutton-icon,
+  .toolbarbutton-1 .toolbarbutton-badge-stack {
+   border-radius: 60% !important;
+  }
+:root {
+	--caption-min-color: 250, 189, 47;
+	--caption-max-color: 131, 165, 152;
+	--caption-close-color: 211, 134, 155;
+	}
+/*:root {
+
+	--caption-min-color: 36, 209, 49;
+	--caption-max-color: 252, 185, 15;
+	--caption-close-color: 250, 55, 55;
+}*/
+	
+.titlebar-button {
+	padding: 8px 10px !important;
+  background: rgba(var(--dark-color), 1) !important;
+}
+.titlebar-button.titlebar-close {padding-right: 26px !important;}
+.titlebar-button > .toolbarbutton-icon {
+	list-style-image: none;
+	border-radius: 10px;
+  }
+
+.titlebar-button.titlebar-min > .toolbarbutton-icon {background: rgba(var(--caption-min-color), 1); }
+.titlebar-button.titlebar-max > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore > .toolbarbutton-icon {background: rgba(var(--caption-max-color), 1); }
+.titlebar-button.titlebar-close > .toolbarbutton-icon {background: rgba(var(--caption-close-color), 1); }
+/*
+ ____     ___     ___    _  __  __  __      _      ____    _  __  ____
+| __ )   / _ \   / _ \  | |/ / |  \/  |    / \    |  _ \  | |/ / / ___|
+|  _ \  | | | | | | | | | ' /  | |\/| |   / _ \   | |_) | | ' /  \___ \
+| |_) | | |_| | | |_| | | . \  | |  | |  / ___ \  |  _ <  | . \   ___) |
+|____/   \___/   \___/  |_|\_\ |_|  |_| /_/   \_\ |_| \_\ |_|\_\ |____/
+*/
+#navigator-toolbox{border-bottom: none !important;}/*隐藏书签线*/
+#PersonalToolbar #PlacesToolbarItems {-moz-box-pack: center !important;}/*书签居中*/
+
+#PersonalToolbar{
+  --uc-bm-height: 14px; /* Might need to adjust if the toolbar has other buttons */
+  --uc-bm-padding: 7px; /* Vertical padding to be applied to bookmarks */
+  --uc-autohide-toolbar-delay: 100ms; /* The toolbar is hidden after 0.6s */  
+}
+#PersonalToolbar:not([customizing]){
+  position: relative;
+  margin-bottom: calc(0px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: transform 135ms linear var(--uc-autohide-toolbar-delay) !important;
+  z-index: 1;
+ }
+#navigator-toolbox:hover > #PersonalToolbar{
+  transition-delay: 100ms !important;
+  transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));
+}

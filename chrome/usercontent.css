@@ -1,0 +1,21 @@
+/*图标圆角*/
+.top-site-outer .tile .icon-wrapper,
+.top-site-outer .tile,
+.rich-icon,
+.icon-wrapper {
+  border-radius: 100% !important;
+  opacity: 1!important;
+  }
+/*隐藏固定图标*/
+.icon.icon-pin-small { display: none !important;}
+
+/*搜索框圆角：browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar */
+#newtab-search-text,
+  #searchSubmit{
+    border-radius: 38px !important;
+  }
+  
+  /* 滚动条 */
+*:not(select) {
+    scrollbar-width: thin !important;
+}

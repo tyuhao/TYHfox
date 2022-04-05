@@ -1,0 +1,151 @@
+/*
+ _____      _      ____    ____       _      ____
+|_   _|    / \    | __ )  | __ )     / \    |  _ \
+  | |     / _ \   |  _ \  |  _ \    / _ \   | |_) |
+  | |    / ___ \  | |_) | | |_) |  / ___ \  |  _ <
+  |_|   /_/   \_\ |____/  |____/  /_/   \_\ |_| \_\
+
+*/
+/*标签页左边距离*/
+:-moz-any(.titlebar-placeholder, .titlebar-spacer)[type=pre-tabs]
+{width: 0 !important;}
+
+#tabbrowser-tabs:not([overflow]) .tabbrowser-tab[first-visible-tab]
+{margin-inline-start: 8px !important;}
+
+/*标签页上边距离*/
+.tab-stack
+{
+	margin-top: 4px !important;
+	margin-bottom: -4px !important;
+}
+
+/*选中标签页颜色标签页*/
+:-moz-any(#TabsToolbar) .tabbrowser-tab[visuallyselected]
+{
+	--tab-bgcolor: var(--toolbar-bgcolor);
+	--tab-opacity: 1;
+}
+
+/*标签无阴影*/
+.tab-background
+{
+ 	background: var(--tab-bgcolor) !important;
+	/* rounded top corners */
+	border-radius: 8px 8px 0 0 !important;
+	position: relative !important;
+	border: 0 !important;
+	visibility: visible !important;
+	box-shadow: none !important;
+}
+
+/* 标签下角 */
+.tab-background::before,
+.tab-background::after
+{
+	content: "" !important;
+	display: block !important;
+	position: absolute !important;
+	width: 8px !important;
+	height: 8px !important;
+	bottom: 0 !important;
+	pointer-events: none !important;
+	transition: box-shadow 0s var(--tab-transition-duration) var(--ease-basic) !important;
+}
+.tab-background::before
+{
+	border-bottom-right-radius: 8px !important;
+	left: 0 !important;
+	transform: translateX(-8px) !important;
+	box-shadow: 4px 4px 0 4px var(--tab-bgcolor) !important;
+}
+.tab-background::after
+{
+	border-bottom-left-radius: 8px !important;
+	right: 0 !important;
+	transform: translateX(8px) !important;
+	box-shadow: -4px 4px 0 4px var(--tab-bgcolor) !important;
+}
+
+/*标签关闭按钮圆角*/
+.tab-close-button,
+.tab-icon-overlay:-moz-any([soundplaying], [muted], [activemedia-blocked]),
+.tab-icon-sound
+{border-radius: 99px !important;}
+/*
+ ____    _____      _      ____     ____   _   _   ____       _      ____
+/ ___|  | ____|    / \    |  _ \   / ___| | | | | | __ )     / \    |  _ \
+\___ \  |  _|     / _ \   | |_) | | |     | |_| | |  _ \    / _ \   | |_) |
+ ___) | | |___   / ___ \  |  _ <  | |___  |  _  | | |_) |  / ___ \  |  _ <
+|____/  |_____| /_/   \_\ |_| \_\  \____| |_| |_| |____/  /_/   \_\ |_| \_\
+*/
+/*地址栏圆角*/
+#urlbar-background,#urlbar{ 
+    border-radius: 16px !important ;
+    /*background-color: var(--color-tabbar) !important;*/
+    border: transparent !important;
+  }
+/*搜索框圆角*/
+#searchbar{border-radius: 16px !important;}
+/*查找框圆角*/
+.findbar-textbox{border-radius: 16px !important;}
+
+/*
+ _____    ___     ___    _       ____       _      ____
+|_   _|  / _ \   / _ \  | |     | __ )     / \    |  _ \
+  | |   | | | | | | | | | |     |  _ \    / _ \   | |_) |
+  | |   | |_| | | |_| | | |___  | |_) |  / ___ \  |  _ <
+  |_|    \___/   \___/  |_____| |____/  /_/   \_\ |_| \_\
+*/
+/*工具栏按钮圆角*/
+ .toolbarbutton-1:hover {
+	fill:var(--color-button) !important;
+  }
+  .toolbarbutton-1[open="true"] {
+	fill: var(--color-button)
+  }
+  .toolbarbutton-1 .toolbarbutton-icon,
+  .toolbarbutton-1 .toolbarbutton-badge-stack {
+   border-radius: 60% !important;
+  }
+
+/*
+ ____     ___     ___    _  __  __  __      _      ____    _  __  ____
+| __ )   / _ \   / _ \  | |/ / |  \/  |    / \    |  _ \  | |/ / / ___|
+|  _ \  | | | | | | | | | ' /  | |\/| |   / _ \   | |_) | | ' /  \___ \
+| |_) | | |_| | | |_| | | . \  | |  | |  / ___ \  |  _ <  | . \   ___) |
+|____/   \___/   \___/  |_|\_\ |_|  |_| /_/   \_\ |_| \_\ |_|\_\ |____/
+*/
+#navigator-toolbox{border-bottom: none !important;}/*隐藏书签线*/
+#PersonalToolbar #PlacesToolbarItems {-moz-box-pack: center !important;}/*书签居中*/
+
+#PersonalToolbar{
+  --uc-bm-height: 14px; /* Might need to adjust if the toolbar has other buttons */
+  --uc-bm-padding: 7px; /* Vertical padding to be applied to bookmarks */
+  --uc-autohide-toolbar-delay: 100ms; /* The toolbar is hidden after 0.6s */  
+}
+#PersonalToolbar:not([customizing]){
+  position: relative;
+  margin-bottom: calc(0px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: transform 135ms linear var(--uc-autohide-toolbar-delay) !important;
+  z-index: 1;
+ }
+#navigator-toolbox:hover > #PersonalToolbar{
+  transition-delay: 100ms !important;
+  transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));
+}
+
+
+/*另一种自动隐藏书签方法
+#PersonalToolbar {
+  visibility: collapse !important;
+  margin-bottom: -20px !important;
+  transition: all .1s ease .15s !important;
+}
+#navigator-toolbox:hover > #PersonalToolbar {
+  visibility: visible !important;
+  margin-bottom: 0px !important;
+}
+*/
