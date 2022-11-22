@@ -1,0 +1,57 @@
+/*#navigator-toolbox {background-color: var(--color-bg) !important;}*/
+.titlebar-color {background-color: var(--toolbar-bgcolor);}
+
+/* Custom min-max-close Buttons */
+.titlebar-button {
+	/*transition: all 0.3s ease !important;*/
+	padding: 8px 10px !important;
+}
+.titlebar-button.titlebar-close {padding-right: 26px !important;}
+.titlebar-button > .toolbarbutton-icon {
+	/*transition: all 0.3s ease !important;*/
+	list-style-image: none;
+  border: 1px solid;
+	border-radius: 10px;
+}
+.titlebar-button.titlebar-min > .toolbarbutton-icon {
+	background: #27c840 !important;
+  border-color: #27c83f7a !important;
+}
+
+.titlebar-button.titlebar-max > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore > .toolbarbutton-icon {
+	background: #febb2e !important;
+  border-color: #febc2e7c !important;
+}
+
+.titlebar-button.titlebar-close > .toolbarbutton-icon {
+	background: #ff5f57 !important;
+	stroke: #ff5f57 !important;
+  border-color: #ff5f5777 !important;
+  
+}
+.titlebar-button.titlebar-close:hover > .toolbarbutton-icon {
+	background: #ff5f5742 !important;
+  border: 1px solid;
+  border-color: #ff5f57 !important;
+}
+.titlebar-button.titlebar-close:hover {
+	background: #fdfdfd00 !important;
+}
+.titlebar-button.titlebar-max:hover > .toolbarbutton-icon,
+.titlebar-button.titlebar-restore:hover > .toolbarbutton-icon {
+	background: #febc2e44 !important;
+  border: 1px solid;
+  border-color: #febb2e !important;
+}
+.titlebar-button.titlebar-max:hover, .titlebar-button.titlebar-restore:hover {
+	background: #fdfdfd00 !important;
+}
+.titlebar-button.titlebar-min:hover > .toolbarbutton-icon {
+	background: #27c83f38 !important;
+  border: 1px solid;
+  border-color: #27c840 !important;
+}
+.titlebar-button.titlebar-min:hover {
+	background: #fdfdfd00 !important;
+}

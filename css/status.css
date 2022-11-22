@@ -1,0 +1,7 @@
+/*状态栏*/
+#statuspanel-label {
+  border-image:1 1 1 1 linear-gradient(90deg, #9059FF 0%, #FF4AA2 52.08%, #FFBD4F 100%) !important;
+	/*border-color: #E55B0A !important;*/
+  /*border-image: 1 1 0 0 linear-gradient(90deg, #9400FF, #ba00e5, #df06b9, #e62da7, #f13b95, #f64d86, #f85f7a, #fc7169, #f9845b, #e8ab52) !important;*/
+  /*background-image*/
+}

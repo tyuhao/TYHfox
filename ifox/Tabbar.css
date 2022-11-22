@@ -1,0 +1,18 @@
+/*
+ _____      _      ____    ____       _      ____
+|_   _|    / \    | __ )  | __ )     / \    |  _ \
+  | |     / _ \   |  _ \  |  _ \    / _ \   | |_) |
+  | |    / ___ \  | |_) | | |_) |  / ___ \  |  _ <
+  |_|   /_/   \_\ |____/  |____/  /_/   \_\ |_| \_\
+*/
+.tab-background{border-radius: 25px 15px 25px 15px !important; }/*标签圆角*/
+/*标签高度*/
+.tabbrowser-tab {
+	max-height: var(--tab-height) !important;
+	min-height: var(--tab-height) !important;
+  }
+/*标签关闭按钮圆角*/
+.tab-close-button,
+.tab-icon-overlay:-moz-any([soundplaying], [muted], [activemedia-blocked]),
+.tab-icon-sound
+{border-radius: 20px !important;}

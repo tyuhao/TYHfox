@@ -1,0 +1,27 @@
+/*
+ ____    _   _   _____   _____    ___    _   _
+| __ )  | | | | |_   _| |_   _|  / _ \  | \ | |
+|  _ \  | | | |   | |     | |   | | | | |  \| |
+| |_) | | |_| |   | |     | |   | |_| | | |\  |
+|____/   \___/    |_|     |_|    \___/  |_| \_|
+*/
+/*新建标签按钮*/
+#TabsToolbar .toolbarbutton-1>.toolbarbutton-icon {
+	padding: 6px !important;
+	width: 28px !important;
+	height: 28px !important;
+	border-radius: 50% !important;
+  }
+  
+  /*工具栏按钮*/
+  .toolbarbutton-1 .toolbarbutton-badge-stack {border-radius: 50% !important}
+  /*更多工具按钮*/
+  toolbar .toolbarbutton-1> .toolbarbutton-icon{ border-radius: 50px !important}
+  /*工具栏圆角*/
+   .toolbarbutton-1:hover {
+	  fill:var(--color-button) !important;
+	border-radius: 20px !important;
+  }
+	.toolbarbutton-1[open="true"] {
+	  fill: var(--color-button)
+	}

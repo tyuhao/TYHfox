@@ -1,0 +1,14 @@
+/*.tab-background{border-radius: 25px 15px 25px 15px !important; }标签圆角*/
+
+.tabbrowser-tab {
+	max-height: var(--tab-height) !important;
+	min-height: var(--tab-height) !important;
+}
+  
+#tabbrowser-tabs{
+  	padding: 2px !important;
+}
+
+.tab-background:is([selected], [multiselected]) {
+  outline: none !important;
+}

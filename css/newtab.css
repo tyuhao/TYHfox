@@ -1,0 +1,29 @@
+.logo,.search-wrapper .logo-and-wordmark .wordmark {
+  display: none !important; 
+}/*firefox logo*/
+
+#newtab-search-text,#searchSubmit{
+  border-radius: 38px !important;
+}/*搜索框*/
+body {
+ --newtab-search-icon: url(chrome://global/skin/icons/search-glass.svg) !important; 
+}
+
+.top-site-outer .tile,
+.top-site-outer .tile .icon-wrapper{
+border-radius: 100% !important;
+}/*图标圆角*/
+
+.personalize-button {
+  border-radius: 25px !important;
+}
+
+@-moz-document url-prefix(about:newtab),url-prefix(about:home) {
+/*隐藏固定按钮*/
+.icon.icon-pin-small { display: none !important;}
+}
+
+/*滚动条样式使用about:config 选择widget.non-native-theme.scrollbar.style为1、2、3更优
+*:not(select) {
+    scrollbar-width: thin !important;
+}*/

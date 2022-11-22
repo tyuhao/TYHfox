@@ -1,0 +1,18 @@
+#identity-icon-label {display: none !important;}
+
+#urlbar-input {
+  text-align: center !important;
+}
+
+#urlbar {
+  max-width: 70% !important;
+  margin: 0 15% !important;
+  /* 	position: unset!important; */;
+}
+
+
+#urlbar-background,#urlbar{ 
+  border-radius: 16px !important ;
+  background-color: var(--toolbar-bgcolor) !important;
+  border: transparent !important;
+}

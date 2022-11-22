@@ -1,0 +1,13 @@
+#navigator-toolbox{border-bottom: none !important;}/*隐藏书签线*/
+#PersonalToolbar #PlacesToolbarItems {-moz-box-pack: center !important;}/*书签居中*/
+
+/*另一种自动隐藏书签方法*/
+#PersonalToolbar {
+  visibility: collapse !important;
+  margin-bottom: -20px !important;
+  transition: all .1s ease .15s !important;
+}
+#navigator-toolbox:hover > #PersonalToolbar {
+  visibility: visible !important;
+  margin-bottom: 0px !important;
+}

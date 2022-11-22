@@ -1,0 +1,20 @@
+/*
+ ____    _____      _      ____     ____   _   _   ____       _      ____
+/ ___|  | ____|    / \    |  _ \   / ___| | | | | | __ )     / \    |  _ \
+\___ \  |  _|     / _ \   | |_) | | |     | |_| | |  _ \    / _ \   | |_) |
+ ___) | | |___   / ___ \  |  _ <  | |___  |  _  | | |_) |  / ___ \  |  _ <
+|____/  |_____| /_/   \_\ |_| \_\  \____| |_| |_| |____/  /_/   \_\ |_| \_\
+*/
+/*地址栏圆角*/
+#urlbar-background,#urlbar{ 
+    border-radius: 16px !important ;
+    /*text-align: center !important;
+    /*background-color: var(--color-tabbar) !important;*/
+    border: transparent !important;
+  }
+/*搜索框圆角*/
+#searchbar{border-radius: 16px !important;}
+/*查找框圆角*/
+.findbar-textbox{border-radius: 16px !important;}
+/*隐藏地址栏扩展的图标文字*/
+#identity-icon-label {display: none !important;}
