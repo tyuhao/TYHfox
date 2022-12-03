@@ -1,5 +1,5 @@
 # TYHfox
-## 用法
+## 💡用法
 
 >1 在 Firefox 的地址栏访问 `about:config`,搜索 `toolkit.legacyUserProfileCustomizations.stylesheets`
 设置为 true
@@ -10,9 +10,9 @@
 >
 >4 打开 Firefox,firefox变成图片中样式
 >
-## [css下载](https://github.com/tyuhao/TYHfox)
+## [📁下载](https://github.com/tyuhao/TYHfox)
 
-
+🪐图例
 |  dark   | light  | green  |
 |  ----  | ----  |----  |
 | ![firefox](img/dark.png)  | ![firefox](img/firefoxnew.png) |![firefox](img/green.png) |
