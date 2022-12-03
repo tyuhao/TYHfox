@@ -1,6 +1,6 @@
 # TYHfox
 ## 💡用法
-
+---
 >1 在 Firefox 的地址栏访问 `about:config`,搜索 `toolkit.legacyUserProfileCustomizations.stylesheets`
 设置为 true
 >
@@ -10,9 +10,12 @@
 >
 >4 打开 Firefox,firefox变成图片中样式
 >
-## [📁下载](https://github.com/tyuhao/TYHfox)
-
-🪐图例
-|  dark   | light  | green  |
-|  ----  | ----  |----  |
-| ![firefox](img/dark.png)  | ![firefox](img/firefoxnew.png) |![firefox](img/green.png) |
+----
+## <center>[*📁下载*](https://github.com/tyuhao/TYHfox/files/10139213/css.zip)</center>
+---
+## <center>🪐图例</center>
+---
+|  dark   | light  |
+|  ----  | ----  |
+| ![firefox](img/dark.png) |![firefox](img/firefoxnew.png) |
+| ![firefox](img/colorful.png) |![firefox](img/green.png) |
