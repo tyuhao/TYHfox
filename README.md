@@ -11,7 +11,7 @@
 >4 打开 Firefox,firefox变成图片中样式
 >
 ----
-## <center>[*📁下载*](https://github.com/tyuhao/TYHfox/files/10139213/css.zip)</center>
+## [📁下载](https://github.com/tyuhao/TYHfox/files/10139213/css.zip)
 ---
 ## <center>🪐图例</center>
 ---
