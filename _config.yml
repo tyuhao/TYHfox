@@ -1,0 +1,44 @@
+title: TYHFox
+
+author: TYH
+
+tagline: A  theme for Firefox. 
+
+description:  Customize Firefox.
+
+url: https://tyuhao.github.io/TYHfox/
+
+twitter: https://twitter.com/tyuhai
+
+logo: "img/line.png"
+
+round-avatar: true
+
+image: "img/light.png"
+
+# Google Analytics ID
+google_analytics: 
+
+# GitHub Values
+github:
+  owner_name: TYH
+  owner_url: https://github.com/tyuhao/
+  repository_url: https://github.com/tyuhao/TYHFox/
+
+show_downloads: true
+
+show_header: true
+
+remote_theme: "dracula/gh-pages"
+
+markdown: CommonMarkGhPages
+
+commonmark:
+  options: ["UNSAFE", "SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
+sass:
+    style: compressed
+
+plugins:
+  - jekyll-seo-tag
