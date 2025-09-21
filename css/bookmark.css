@@ -1,14 +1,29 @@
 #navigator-toolbox{border-bottom: none !important;}/*隐藏书签线*/
-#PersonalToolbar #PlacesToolbarItems {-moz-box-pack: center !important;}/*书签居中*/
+/*#PersonalToolbar #PlacesToolbarItems {-moz-box-pack: center !important;}书签居中*/
 
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: center !important;
+}/*书签居中*/
 /* grey out ccons inside the toolbar to make it
  * more aligned with the Black & White colour look 
 #PersonalToolbar toolbarbutton:not(:hover),
 #bookmarks-toolbar-button:not(:hover) { filter: grayscale(1) !important; }*/
 
 
+/*#PersonalToolbar {
+  visibility: collapse !important;
+  margin-bottom: -20px !important;
+  transition: all .1s ease .1s !important;
+}*/
 
-#PersonalToolbar{
+/*#navigator-toolbox:hover > #PersonalToolbar {
+  visibility: visible !important;
+  margin-bottom: 0px !important;
+  transition: all .1s ease .1s !important;
+}*/
+
+/* #PersonalToolbar{
   --uc-bm-height: 14px; /* Might need to adjust if the toolbar has other buttons */
   --uc-bm-padding: 7px; /* Vertical padding to be applied to bookmarks */
   --uc-autohide-toolbar-delay: 100ms; /* The toolbar is hidden after 0.6s */  
@@ -28,7 +43,7 @@
 #navigator-toolbox:hover > #PersonalToolbar{
   transition-delay: 100ms !important;
   transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));
-}
+} */
 
 
 /*#PersonalToolbar .toolbarbutton-1,

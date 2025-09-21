@@ -1,6 +1,12 @@
 /*#navigator-toolbox {background-color: var(--color-bg) !important;}*/
-.titlebar-color {background-color: var(--toolbar-bgcolor);}
+.titlebar-color {background-color: var(--color-bg);}
 
+
+
+
+/*.browser-toolbar:not(.titlebar-color) {
+  background-color: var(--color-bg)!important;
+}*/
 :root {
 /*窗口调整颜色*/
 	--accent-color: 46, 124, 238;

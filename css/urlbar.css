@@ -5,13 +5,19 @@
 }
 
 #urlbar {
-  max-width: 70% !important;
+  max-width: 50% !important;
   margin: 0 15% !important;
   /* 	position: unset!important; */;
 }
 
 
-#urlbar-background,#urlbar{ 
+#urlbar-background{ 
+  border-radius: 16px !important ;
+  /*background-color: var(--toolbar-bgcolor) !important;*/
+  border: transparent !important;
+}
+
+#urlbar{ 
   border-radius: 16px !important ;
   background-color: var(--toolbar-bgcolor) !important;
   border: transparent !important;

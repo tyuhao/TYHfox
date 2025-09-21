@@ -12,3 +12,8 @@
 .tab-background:is([selected], [multiselected]) {
   outline: none !important;
 }
+
+:root:not([privatebrowsingmode="temporary"]) 
+:is(toolbarbutton) + #tabbrowser-tabs, :is(toolbarpaletteitem) {
+  border-inline-start: none !important;
+}

@@ -5,7 +5,19 @@
   height: 28px !important;
   border-radius: 50% !important;
 }
-
+/*地址栏图标更换*/
+#identity-box[pageproxystate="valid"].chromeUI #identity-icon {
+  list-style-image: url(chrome://mozapps/skin/extensions/line.svg) !important;
+}
+//view图标
+//#firefox-view-button {
+//  list-style-image: url(chrome://mozapps/skin/extensions/line.svg)!important;
+//}
+/*标签图标
+.tab-icon-image
+ {
+ content: url("chrome://mozapps/skin/extensions/line.svg")!important;
+}*/
 /*工具栏圆角
  .toolbarbutton-1:hover {
 	fill: #24d131 !important;
@@ -20,3 +32,5 @@
   .close-icon:hover {
 	fill: #FF0000 !important;	
   }*/
+/*标签下拉按钮
+ #tabbrowser-tabs ~ #alltabs-button {display:none!important;}*/

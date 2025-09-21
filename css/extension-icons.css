@@ -1,4 +1,15 @@
 .webextension-browser-action[data-extensionid="uBlock0@raymondhill.net"] {
-    list-style-image: url(icons/custom-adblock.svg) !important;
+    /*list-style-image: url(icons/custom-adblock.svg) !important;
+    list-style-image: url(chrome://mozapps/skin/extensions/line.svg) !important;
+    list-style-image: url(chrome://browser/skin/tracking-protection.svg) !important ;*/
+    list-style-image: url(chrome://browser/skin/tracking-protection-active.svg) !important ;
+    
 }
-
+/*
+.webextension-browser-action[data-extensionid="firefox@tampermonkey.net"] {
+    list-style-image: url(chrome://global/skin/icons/link.svg) !important ;
+    list-style-image: url(chrome://devtools/skin/images/tool-styleeditor.svg) !important ;*/
+    list-style-image: url(chrome://global/skin/icons/page-portrait.svg) !important ;
+    
+    
+}

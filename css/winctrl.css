@@ -1,6 +1,14 @@
 /*#navigator-toolbox {background-color: var(--color-bg) !important;}*/
 .titlebar-color {background-color: var(--toolbar-bgcolor);}
+/*.browser-toolbar:not(.titlebar-color) {
+  background-color: var(--color-bg)!important;
+}*/
 
+#TabsToolbar {
+  min-height: 0;
+  padding: 0;
+  background-color: var(--toolbar-bgcolor) !important;
+}
 /* Custom min-max-close Buttons */
 .titlebar-button {
 	/*transition: all 0.3s ease !important;*/
@@ -55,3 +63,17 @@
 .titlebar-button.titlebar-min:hover {
 	background: #fdfdfd00 !important;
 }
+
+.titlebar-button { 
+        &::before { 
+            display: none !important; 
+        } 
+    }
+.titlebar-button { 
+        & > .toolbarbutton-icon { 
+            list-style-image: none !important; 
+            display: inline-flex !important;
+            width: 12px !important;
+            height: 12px !important;
+        } 
+    }
